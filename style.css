@@ -2763,7 +2763,181 @@ main {
     transform:
         translateX(5px);
 }
+/* =========================================================
+   WEBSITE PROJECT
+   HANYA UNTUK SECTION WEBSITE
+========================================================= */
 
+.website-project-section {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 100px 7% 100px;
+}
+
+.website-project-heading {
+    margin-bottom: 45px;
+}
+
+.website-project-heading h2 {
+    margin-top: 10px;
+    font-size: 42px;
+    letter-spacing: -1px;
+}
+
+.website-project-heading p {
+    max-width: 600px;
+    margin-top: 15px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+}
+
+
+/* CARD */
+
+.website-project-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 330px;
+    padding: 45px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 25px;
+    background: rgba(255,255,255,0.025);
+    overflow: hidden;
+}
+
+
+.website-project-content {
+    max-width: 760px;
+}
+
+
+.website-project-number {
+    display: inline-block;
+    margin-right: 15px;
+    color: rgba(255,255,255,0.35);
+    font-size: 11px;
+}
+
+
+.website-project-type {
+    color: #77d9ff;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+.website-project-content h3 {
+    margin-top: 25px;
+    font-size: 45px;
+    line-height: 1;
+}
+
+
+.website-project-content h4 {
+    margin-top: 12px;
+    color: rgba(255,255,255,0.65);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.website-project-content p {
+    max-width: 700px;
+    margin-top: 20px;
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+.website-project-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 11px 18px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 25px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+
+.website-project-link:hover {
+    background: white;
+    color: #07111f;
+}
+
+
+.website-project-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: rgba(255,255,255,0.3);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+/* WEBSITE PROJECT IMAGE */
+
+.website-project-image {
+    width: 380px;
+    min-width: 380px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.website-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.website-project-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .website-project-section {
+        padding:
+            70px 7% 70px;
+    }
+
+    .website-project-heading h2 {
+        font-size: 30px;
+    }
+
+    .website-project-card {
+        flex-direction: column;
+        gap: 30px;
+        padding: 28px;
+    }
+
+    .website-project-content h3 {
+        font-size: 35px;
+    }
+
+    .website-project-side {
+        flex-direction: row;
+        align-items: center;
+    }
+    .website-project-image {
+    width: 100%;
+    min-width: 0;
+    height: 210px;
+}
+
+}
 
 /* =========================================================
    EXPERIENCE VIEWER

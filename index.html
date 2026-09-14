@@ -505,448 +505,1075 @@
 
 
         <!-- ================= PORTFOLIO ================= -->
-        <!-- =========================
+<!-- =========================
      PORTFOLIO / SHOWCASE
 ========================= -->
-        <section class="portfolio-section" id="portfolio">
 
-            <div class="portfolio-heading">
-                <span class="portfolio-label">SHOWCASE</span>
+<section class="portfolio-section" id="portfolio">
 
-                <h2>MY PROJECT / PORTOFOLIO</h2>
+    <div class="portfolio-heading">
 
-                <p>
-                    Koleksi karya desain poster event sekolah, konten feeds Instagram,
-                    identitas visual PDD, dan prototype website.
-                </p>
-            </div>
+        <span class="portfolio-label">
+            SHOWCASE
+        </span>
 
+        <h2>
+            MY PROJECT / PORTOFOLIO
+        </h2>
 
-            <!-- FILTER -->
-            <div class="portfolio-filter">
+        <p>
+            Koleksi karya desain visual yang saya buat untuk
+            berbagai kebutuhan kegiatan, media sosial, dan
+            proyek kreatif.
+        </p>
 
-                <button class="portfolio-filter-btn active" data-filter="all">
-                    ALL
-                </button>
-
-                <button class="portfolio-filter-btn" data-filter="event">
-                    01 EVENT DESIGN
-                </button>
-
-                <button class="portfolio-filter-btn" data-filter="pdd">
-                    02 PDD & CONTENT
-                </button>
-
-                <button class="portfolio-filter-btn" data-filter="social">
-                    03 SOCIAL MEDIA
-                </button>
-
-                <button class="portfolio-filter-btn" data-filter="web">
-                    04 WEB DEV
-                </button>
-
-            </div>
+    </div>
 
 
-            <!-- SHOWCASE -->
-            <div class="portfolio-showcase">
+    <!-- ================= FILTER ================= -->
 
-                <!-- LEFT ARROW -->
-                <button class="portfolio-arrow portfolio-arrow-left" id="portfolioPrev" aria-label="Previous Project">
-                    ‹
-                </button>
+    <div class="portfolio-filter">
 
+        <button
+            class="portfolio-filter-btn active"
+            data-filter="all"
+        >
+            ALL
+        </button>
 
-                <!-- MAIN CARD -->
-                <div class="portfolio-card">
+        <button
+            class="portfolio-filter-btn"
+            data-filter="event"
+        >
+            01 EVENT DESIGN
+        </button>
 
-                    <div class="portfolio-card-top">
+        <button
+            class="portfolio-filter-btn"
+            data-filter="social"
+        >
+            02 SOCIAL MEDIA
+        </button>
 
-                        <span class="portfolio-number" id="portfolioCategory">
-                            01 • POSTER EVENT
-                        </span>
+        <button
+            class="portfolio-filter-btn"
+            data-filter="creative"
+        >
+            03 CREATIVE
+        </button>
 
-                        <h3 id="portfolioTitle">
-                            Rihana Vici Nurrofina
-                        </h3>
-
-                    </div>
-
-
-                    <!-- IMAGE AREA -->
-                    <img id="portfolioImage" class="portfolio-image" src="Assets/1.png" alt="Portfolio Project">
-
-                    <!-- BOTTOM -->
-                    <div class="portfolio-card-bottom">
-
-                        <span id="portfolioType">
-                            Canva • Event
-                        </span>
-
-                        <button class="portfolio-detail" id="portfolioDetail">
-                            Detail View →
-                        </button>
-
-                    </div>
-
-                </div>
+    </div>
 
 
-                <!-- RIGHT ARROW -->
-                <button class="portfolio-arrow portfolio-arrow-right" id="portfolioNext" aria-label="Next Project">
-                    ›
-                </button>
+    <!-- ================= SHOWCASE ================= -->
 
-            </div>
+    <div class="portfolio-showcase">
 
+        <!-- LEFT ARROW -->
 
-            <!-- COUNTER -->
-            <div class="portfolio-counter">
-                <span id="portfolioCurrent">01</span>
-                <span class="counter-line">/</span>
-                <span>10</span>
-            </div>
-
-        </section>
+        <button
+            class="portfolio-arrow portfolio-arrow-left"
+            id="portfolioPrev"
+            aria-label="Previous Project"
+        >
+            ‹
+        </button>
 
 
-        <!-- PORTFOLIO DETAIL VIEWER -->
-        <div class="portfolio-viewer" id="portfolioViewer">
+        <!-- MAIN CARD -->
 
-            <button class="portfolio-viewer-close" id="portfolioViewerClose">
-                ← BACK
-            </button>
+        <div class="portfolio-card">
 
-            <div class="portfolio-viewer-content">
+            <div class="portfolio-card-top">
 
-                <img id="portfolioViewerImage" src="" alt="Portfolio Preview">
+                <span
+                    class="portfolio-number"
+                    id="portfolioCategory"
+                >
+                    01 • EVENT DESIGN
+                </span>
+
+                <h3 id="portfolioTitle">
+                    Poster Event
+                </h3>
 
             </div>
 
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
 
-                    const projects = [
-                        {
-                            number: "01",
-                            category: "POSTER EVENT",
-                            type: "Canva • Event",
-                            file: "1"
-                        },
-                        {
-                            number: "02",
-                            category: "EVENT DESIGN",
-                            type: "Canva • Design",
-                            file: "2"
-                        },
-                        {
-                            number: "03",
-                            category: "PDD & CONTENT",
-                            type: "Design • PDD",
-                            file: "3"
-                        },
-                        {
-                            number: "04",
-                            category: "PDD & CONTENT",
-                            type: "Design • Content",
-                            file: "4"
-                        },
-                        {
-                            number: "05",
-                            category: "SOCIAL MEDIA",
-                            type: "Canva • Social Media",
-                            file: "5"
-                        },
-                        {
-                            number: "06",
-                            category: "SOCIAL MEDIA",
-                            type: "Design • Instagram",
-                            file: "6"
-                        },
-                        {
-                            number: "07",
-                            category: "WEB DEVELOPMENT",
-                            type: "HTML • CSS",
-                            file: "7"
-                        },
-                        {
-                            number: "08",
-                            category: "WEB DEVELOPMENT",
-                            type: "Web • PPLG",
-                            file: "8"
-                        },
-                        {
-                            number: "09",
-                            category: "CREATIVE DESIGN",
-                            type: "Design • Creative",
-                            file: "9"
-                        },
-                        {
-                            number: "10",
-                            category: "CREATIVE PROJECT",
-                            type: "Creative • Digital",
-                            file: "10"
+            <!-- IMAGE -->
+
+            <img
+                id="portfolioImage"
+                class="portfolio-image"
+                src="Assets/1.png"
+                alt="Portfolio Project"
+            >
+
+
+            <!-- BOTTOM -->
+
+            <div class="portfolio-card-bottom">
+
+                <span id="portfolioType">
+                    Design
+                </span>
+
+                <button
+                    class="portfolio-detail"
+                    id="portfolioDetail"
+                >
+                    Detail View →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+
+        <button
+            class="portfolio-arrow portfolio-arrow-right"
+            id="portfolioNext"
+            aria-label="Next Project"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- ================= COUNTER ================= -->
+
+    <div class="portfolio-counter">
+
+        <span id="portfolioCurrent">
+            01
+        </span>
+
+        <span class="counter-line">
+            /
+        </span>
+
+        <span id="portfolioTotal">
+            08
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WEBSITE PROJECT
+     BAGIAN TERPISAH DARI PORTFOLIO
+========================================================= -->
+
+<section class="website-project-section">
+
+    <div class="website-project-heading">
+
+        <span class="small-label">
+            WEBSITE PROJECT
+        </span>
+
+        <h2>
+            DIGITAL EXPERIENCE
+        </h2>
+
+        <p>
+            Website yang saya kembangkan sebagai media pembelajaran
+            dan pengalaman digital yang interaktif.
+        </p>
+
+    </div>
+
+
+    <!-- ================= AKSARAMA ================= -->
+
+    <div class="website-project-card">
+    
+
+    <div class="website-project-image">
+    <img src="./Assets/aksarama.png" alt="Aksarama Website Project">
+    </div>
+
+    <div class="website-project-content">
+
+            <span class="website-project-number">
+                01
+            </span>
+
+            <span class="website-project-type">
+                WEBSITE
+            </span>
+
+
+            <h3>
+                Aksarama
+            </h3>
+
+
+            <h4>
+                Digital Culture Learning Website
+            </h4>
+
+
+            <p>
+                Aksarama merupakan website edukasi budaya Indonesia
+                yang dirancang untuk memperkenalkan budaya Jawa
+                melalui informasi yang dikemas secara visual
+                dan interaktif.
+            </p>
+
+            <p>
+                Website ini membahas berbagai informasi mengenai
+                rumah adat dan pakaian adat, serta dilengkapi
+                dengan video, kuis, dan permainan sebagai bagian
+                dari pengalaman belajar.
+            </p>
+
+
+            <a
+                href="https://aksaramaproyek-sgkb.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="website-project-link"
+            >
+                EXPLORE WEBSITE →
+            </a>
+
+        </div>
+
+
+        <div class="website-project-side">
+
+            <span>
+                WEB
+            </span>
+
+            <span>
+                2026
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PORTFOLIO DETAIL VIEWER
+========================================================= -->
+
+<div
+    class="portfolio-viewer"
+    id="portfolioViewer"
+>
+
+    <button
+        class="portfolio-viewer-close"
+        id="portfolioViewerClose"
+    >
+        ← BACK
+    </button>
+
+
+    <div class="portfolio-viewer-content">
+
+        <img
+            id="portfolioViewerImage"
+            src=""
+            alt="Portfolio Preview"
+        >
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PORTFOLIO JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* =====================================================
+           PROJECT DATA
+
+           SEMUA DI SINI ADALAH PROJECT DESIGN.
+           WEBSITE TIDAK DIMASUKKAN KE SLIDER.
+        ===================================================== */
+
+        const projects = [
+
+            {
+                number: "01",
+                category: "EVENT DESIGN",
+                type: "Design",
+                file: "1",
+                filter: "event"
+            },
+
+            {
+                number: "02",
+                category: "EVENT DESIGN",
+                type: "Design",
+                file: "2",
+                filter: "event"
+            },
+
+            {
+                number: "03",
+                category: "EVENT DESIGN",
+                type: "Design",
+                file: "3",
+                filter: "event"
+            },
+
+            {
+                number: "04",
+                category: "EVENT DESIGN",
+                type: "Design",
+                file: "4",
+                filter: "event"
+            },
+
+            {
+                number: "05",
+                category: "SOCIAL MEDIA",
+                type: "Design",
+                file: "5",
+                filter: "social"
+            },
+
+            {
+                number: "06",
+                category: "SOCIAL MEDIA",
+                type: "Design",
+                file: "6",
+                filter: "social"
+            },
+
+            {
+                number: "07",
+                category: "CREATIVE",
+                type: "Design",
+                file: "9",
+                filter: "creative"
+            },
+
+            {
+                number: "08",
+                category: "CREATIVE",
+                type: "Design",
+                file: "10",
+                filter: "creative"
+            }
+
+        ];
+
+
+        /* =====================================================
+           ELEMENT
+        ===================================================== */
+
+        const image =
+            document.getElementById(
+                "portfolioImage"
+            );
+
+        const category =
+            document.getElementById(
+                "portfolioCategory"
+            );
+
+        const title =
+            document.getElementById(
+                "portfolioTitle"
+            );
+
+        const type =
+            document.getElementById(
+                "portfolioType"
+            );
+
+        const current =
+            document.getElementById(
+                "portfolioCurrent"
+            );
+
+        const total =
+            document.getElementById(
+                "portfolioTotal"
+            );
+
+        const next =
+            document.getElementById(
+                "portfolioNext"
+            );
+
+        const prev =
+            document.getElementById(
+                "portfolioPrev"
+            );
+
+        const detail =
+            document.getElementById(
+                "portfolioDetail"
+            );
+
+        const filterButtons =
+            document.querySelectorAll(
+                ".portfolio-filter-btn"
+            );
+
+
+        /* =====================================================
+           VIEWER
+        ===================================================== */
+
+        const viewer =
+            document.getElementById(
+                "portfolioViewer"
+            );
+
+        const viewerImage =
+            document.getElementById(
+                "portfolioViewerImage"
+            );
+
+        const viewerClose =
+            document.getElementById(
+                "portfolioViewerClose"
+            );
+
+
+        /* =====================================================
+           FILTER
+        ===================================================== */
+
+        let activeFilter = "all";
+
+        let filteredProjects =
+            [...projects];
+
+        let currentIndex = 0;
+
+
+        /* =====================================================
+           IMAGE LOADER
+        ===================================================== */
+
+        function getImage(
+            file,
+            callback
+        ) {
+
+            const extensions = [
+                ".png",
+                ".jpg",
+                ".jpeg",
+                ".webp"
+            ];
+
+            let index = 0;
+
+
+            function tryImage() {
+
+                if (
+                    index >=
+                    extensions.length
+                ) {
+
+                    console.log(
+                        "Gambar tidak ditemukan:",
+                        file
+                    );
+
+                    return;
+
+                }
+
+
+                const src =
+                    "Assets/" +
+                    file +
+                    extensions[index];
+
+
+                const test =
+                    new Image();
+
+
+                test.onload =
+                    function () {
+
+                        callback(src);
+
+                    };
+
+
+                test.onerror =
+                    function () {
+
+                        index++;
+
+                        tryImage();
+
+                    };
+
+
+                test.src = src;
+
+            }
+
+
+            tryImage();
+
+        }
+
+
+        /* =====================================================
+           SHOW PROJECT
+        ===================================================== */
+
+        function showProject(index) {
+
+            if (
+                !filteredProjects.length
+            ) {
+
+                return;
+
+            }
+
+
+            const project =
+                filteredProjects[index];
+
+
+            /* IMAGE ANIMATION */
+
+            image.style.opacity = "0";
+
+            image.style.transform =
+                "scale(0.94) translateX(10px)";
+
+
+            setTimeout(
+                function () {
+
+                    getImage(
+                        project.file,
+                        function (src) {
+
+                            image.src = src;
+
+                            image.style.opacity = "1";
+
+                            image.style.transform =
+                                "scale(1) translateX(0)";
+
                         }
+                    );
+
+
+                    /* CATEGORY */
+
+                    category.textContent =
+                        project.number +
+                        " • " +
+                        project.category;
+
+
+                    /* TITLE */
+
+                    title.textContent =
+                        project.title ||
+                        getDefaultTitle(
+                            project.file
+                        );
+
+
+                    /* TYPE */
+
+                    type.textContent =
+                        "Design";
+
+
+                    /* COUNTER */
+
+                    current.textContent =
+                        String(
+                            index + 1
+                        ).padStart(
+                            2,
+                            "0"
+                        );
+
+
+                    total.textContent =
+                        String(
+                            filteredProjects.length
+                        ).padStart(
+                            2,
+                            "0"
+                        );
+
+
+                },
+                180
+            );
+
+        }
+
+
+        /* =====================================================
+           DEFAULT TITLE
+        ===================================================== */
+
+        function getDefaultTitle(file) {
+
+            const titles = {
+
+                "1":
+                    "Poster Event",
+
+                "2":
+                    "Event Design",
+
+                "3":
+                    "Creative Design",
+
+                "4":
+                    "Event Visual",
+
+                "5":
+                    "Social Media Design",
+
+                "6":
+                    "Social Media Content",
+
+                "9":
+                    "Creative Project",
+
+                "10":
+                    "Digital Design"
+
+            };
+
+
+            return (
+                titles[file] ||
+                "Creative Project"
+            );
+
+        }
+
+
+        /* =====================================================
+           FILTER BUTTON
+        ===================================================== */
+
+        filterButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+
+                        /* ACTIVE */
+
+                        filterButtons.forEach(
+                            function (btn) {
+
+                                btn.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+
+                        button.classList.add(
+                            "active"
+                        );
+
+
+                        /* FILTER */
+
+                        activeFilter =
+                            button.dataset.filter;
+
+
+                        if (
+                            activeFilter ===
+                            "all"
+                        ) {
+
+                            filteredProjects =
+                                [...projects];
+
+                        } else {
+
+                            filteredProjects =
+                                projects.filter(
+                                    function (
+                                        project
+                                    ) {
+
+                                        return (
+                                            project.filter ===
+                                            activeFilter
+                                        );
+
+                                    }
+                                );
+
+                        }
+
+
+                        /* RESET */
+
+                        currentIndex = 0;
+
+
+                        /* SHOW */
+
+                        showProject(
+                            currentIndex
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           NEXT
+        ===================================================== */
+
+        next.addEventListener(
+            "click",
+            function () {
+
+
+                currentIndex++;
+
+
+                if (
+                    currentIndex >=
+                    filteredProjects.length
+                ) {
+
+                    currentIndex = 0;
+
+                }
+
+
+                showProject(
+                    currentIndex
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           PREVIOUS
+        ===================================================== */
+
+        prev.addEventListener(
+            "click",
+            function () {
+
+
+                currentIndex--;
+
+
+                if (
+                    currentIndex < 0
+                ) {
+
+                    currentIndex =
+                        filteredProjects.length - 1;
+
+                }
+
+
+                showProject(
+                    currentIndex
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           DETAIL VIEW
+        ===================================================== */
+
+        detail.addEventListener(
+            "click",
+            function () {
+
+
+                const project =
+                    filteredProjects[
+                        currentIndex
                     ];
 
 
-                    let currentIndex = 0;
+                if (!project) {
+
+                    return;
+
+                }
 
 
-                    const image =
-                        document.getElementById("portfolioImage");
-
-                    const category =
-                        document.getElementById("portfolioCategory");
-
-                    const type =
-                        document.getElementById("portfolioType");
-
-                    const current =
-                        document.getElementById("portfolioCurrent");
-
-                    const next =
-                        document.getElementById("portfolioNext");
-
-                    const prev =
-                        document.getElementById("portfolioPrev");
+                viewerImage.src =
+                    image.src;
 
 
-                    /* =====================================
-                       CARI FILE GAMBAR
-                    ===================================== */
-
-                    function getImage(file, callback) {
-
-                        const extensions = [
-                            ".png",
-                            ".jpg",
-                            ".jpeg",
-                            ".webp"
-                        ];
-
-                        let i = 0;
+                viewerImage.alt =
+                    project.title ||
+                    "Portfolio Project";
 
 
-                        function tryImage() {
-
-                            if (i >= extensions.length) {
-                                console.log("Gambar tidak ditemukan:", file);
-                                return;
-                            }
+                viewer.classList.add(
+                    "show"
+                );
 
 
-                            const src =
-                                "Assets/" +
-                                file +
-                                extensions[i];
+                document.body.style.overflow =
+                    "hidden";
+
+            }
+        );
 
 
-                            const test =
-                                new Image();
+        /* =====================================================
+           CLICK IMAGE
+        ===================================================== */
+
+        image.addEventListener(
+            "click",
+            function () {
 
 
-                            test.onload = function () {
-
-                                callback(src);
-
-                            };
-
-
-                            test.onerror = function () {
-
-                                i++;
-
-                                tryImage();
-
-                            };
+                const project =
+                    filteredProjects[
+                        currentIndex
+                    ];
 
 
-                            test.src = src;
-                        }
+                if (!project) {
+
+                    return;
+
+                }
 
 
-                        tryImage();
-                    }
+                viewerImage.src =
+                    image.src;
 
 
-                    /* =====================================
-                       TAMPILKAN PROJECT
-                    ===================================== */
-
-                    function showProject(index) {
-
-                        const project =
-                            projects[index];
+                viewerImage.alt =
+                    project.title ||
+                    "Portfolio Project";
 
 
-                        /* animasi keluar */
-
-                        image.style.opacity = "0";
-
-                        image.style.transform =
-                            "scale(0.94) translateX(10px)";
+                viewer.classList.add(
+                    "show"
+                );
 
 
-                        setTimeout(function () {
+                document.body.style.overflow =
+                    "hidden";
 
-                            getImage(
-                                project.file,
-                                function (src) {
-
-                                    image.src = src;
-
-                                    image.style.opacity = "1";
-
-                                    image.style.transform =
-                                        "scale(1) translateX(0)";
-                                }
-                            );
+            }
+        );
 
 
-                            category.textContent =
-                                project.number +
-                                " • " +
-                                project.category;
+        /* =====================================================
+           CLOSE VIEWER
+        ===================================================== */
+
+        viewerClose.addEventListener(
+            "click",
+            function () {
+
+                viewer.classList.remove(
+                    "show"
+                );
+
+                document.body.style.overflow =
+                    "";
+
+            }
+        );
 
 
-                            type.textContent =
-                                project.type;
+        /* =====================================================
+           CLOSE CLICK OUTSIDE
+        ===================================================== */
 
+        viewer.addEventListener(
+            "click",
+            function (event) {
 
-                            current.textContent =
-                                project.number;
+                if (
+                    event.target ===
+                    viewer
+                ) {
 
-
-                        }, 180);
-                    }
-
-
-                    /* =====================================
-                       NEXT
-                    ===================================== */
-
-                    next.addEventListener(
-                        "click",
-                        function () {
-
-                            currentIndex++;
-
-                            if (
-                                currentIndex >=
-                                projects.length
-                            ) {
-                                currentIndex = 0;
-                            }
-
-                            showProject(currentIndex);
-
-                        }
+                    viewer.classList.remove(
+                        "show"
                     );
 
+                    document.body.style.overflow =
+                        "";
 
-                    /* =====================================
-                       PREVIOUS
-                    ===================================== */
+                }
 
-                    prev.addEventListener(
-                        "click",
-                        function () {
+            }
+        );
 
-                            currentIndex--;
 
-                            if (currentIndex < 0) {
-                                currentIndex =
-                                    projects.length - 1;
-                            }
+        /* =====================================================
+           SWIPE
+        ===================================================== */
 
-                            showProject(currentIndex);
+        let startX = 0;
 
-                        }
+
+        image.addEventListener(
+            "touchstart",
+            function (event) {
+
+                startX =
+                    event.touches[0].clientX;
+
+            },
+            {
+                passive: true
+            }
+        );
+
+
+        image.addEventListener(
+            "touchend",
+            function (event) {
+
+
+                const endX =
+                    event.changedTouches[0]
+                        .clientX;
+
+
+                const difference =
+                    startX - endX;
+
+
+                if (
+                    Math.abs(
+                        difference
+                    ) < 50
+                ) {
+
+                    return;
+
+                }
+
+
+                if (
+                    difference > 0
+                ) {
+
+                    next.click();
+
+                } else {
+
+                    prev.click();
+
+                }
+
+            },
+            {
+                passive: true
+            }
+        );
+
+
+        /* =====================================================
+           KEYBOARD
+        ===================================================== */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+
+                if (
+                    event.key ===
+                    "Escape"
+                ) {
+
+                    viewer.classList.remove(
+                        "show"
                     );
 
+                    document.body.style.overflow =
+                        "";
 
-                    /* =====================================
-                       SWIPE HP
-                    ===================================== */
-
-                    let startX = 0;
+                }
 
 
-                    image.addEventListener(
-                        "touchstart",
-                        function (e) {
+                if (
+                    event.key ===
+                    "ArrowRight"
+                ) {
 
-                            startX =
-                                e.touches[0].clientX;
+                    next.click();
 
-                        },
-                        { passive: true }
-                    );
+                }
 
 
-                    image.addEventListener(
-                        "touchend",
-                        function (e) {
+                if (
+                    event.key ===
+                    "ArrowLeft"
+                ) {
 
-                            const endX =
-                                e.changedTouches[0].clientX;
+                    prev.click();
 
+                }
 
-                            const difference =
-                                startX - endX;
-
-
-                            if (Math.abs(difference) < 50) {
-                                return;
-                            }
+            }
+        );
 
 
-                            if (difference > 0) {
+        /* =====================================================
+           FIRST LOAD
+        ===================================================== */
 
-                                next.click();
+        showProject(0);
 
-                            } else {
+    }
 
-                                prev.click();
+);
 
-                            }
-
-                        },
-                        { passive: true }
-                    );
-
-
-                    /* =====================================
-                       KEYBOARD
-                    ===================================== */
-
-                    document.addEventListener(
-                        "keydown",
-                        function (e) {
-
-                            if (e.key === "ArrowRight") {
-                                next.click();
-                            }
-
-                            if (e.key === "ArrowLeft") {
-                                prev.click();
-                            }
-
-                        }
-                    );
-
-
-                    /* =====================================
-                       LOAD PERTAMA
-                    ===================================== */
-
-                    showProject(0);
-
-                });
-            </script>
-
-        </div>
+</script>
 
 
         <!-- ================= EXPERIENCE ================= -->
