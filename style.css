@@ -4077,6 +4077,565 @@ main {
     box-shadow: 0 0 20px rgba(130, 150, 255, 0.2);
 }
 
+.nav-menu {
+        gap: 15px;
+    }
+
+
+    .nav-link {
+        font-size: 9px;
+    }
+
+
+    .nav-location {
+        display: none;
+    }
+
+
+    .about-container {
+        gap: 45px;
+    }
+
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* portfolio sedikit dikecilkan */
+
+    .portfolio-card {
+        width: 400px;
+
+        height: 590px;
+    }
+
+
+    .portfolio-showcase::before {
+        width: 450px;
+        height: 450px;
+    }
+   /* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    width: 100%;
+
+    padding: 70px 7% 25px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 10, 25, 0),
+            rgba(4, 8, 20, 0.75)
+        );
+
+    border-top: 1px solid rgba(0, 180, 255, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* subtle glow */
+
+.site-footer::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 250px;
+
+    left: 50%;
+    bottom: -180px;
+
+    transform: translateX(-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 150, 255, 0.12),
+            transparent 70%
+        );
+
+    filter: blur(30px);
+
+    pointer-events: none;
+}
+
+
+.footer-container {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   FOOTER TOP
+======================================== */
+
+.footer-top {
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr;
+
+    gap: 70px;
+
+    padding-bottom: 45px;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.footer-logo {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #4facfe,
+            #7b5cff
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+    display: inline-block;
+}
+
+
+.footer-brand p {
+    max-width: 280px;
+
+    margin-top: 15px;
+
+    color: #74819e;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   TITLES
+======================================== */
+
+.footer-title {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #00d9ff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px 20px;
+}
+
+
+.footer-links a {
+    color: #78849f;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+
+.footer-links a:hover {
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(0, 210, 255, 0.5);
+}
+
+
+/* ========================================
+   SOCIAL
+======================================== */
+
+.footer-social-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.footer-social-links a {
+    width: fit-content;
+
+    color: #78849f;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: 0.25s ease;
+}
+
+
+.footer-social-links a:hover {
+    color: #00d9ff;
+
+    transform: translateX(4px);
+}
+
+
+/* ========================================
+   LINE
+======================================== */
+
+.footer-line {
+    width: 100%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 200, 255, 0.35),
+            rgba(120, 80, 255, 0.35),
+            transparent
+        );
+}
+
+
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-top: 22px;
+
+    color: #56627d;
+
+    font-size: 9px;
+
+    letter-spacing: 0.2px;
+}
+
+
+.footer-bottom span:last-child {
+    color: #687590;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .site-footer {
+        padding: 60px 20px 25px;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding-bottom: 35px;
+    }
+
+
+    .footer-brand p {
+        max-width: 330px;
+    }
+
+
+    .footer-links {
+        gap: 12px 18px;
+    }
+
+
+    .footer-social-links {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+        line-height: 1.6;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .site-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        gap: 10px 15px;
+    }
+
+    .footer-bottom {
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    /* -------------------------
+       NAVBAR
+    ------------------------- */
+
+    .navbar {
+        height: 70px;
+    }
+
+
+    .nav-container {
+        width: 90%;
+    }
+
+
+    .nav-menu,
+    .nav-right {
+        display: none;
+    }
+
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    .mobile-menu {
+        position: fixed;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        padding:
+            20px 6% 30px;
+
+        background:
+            rgba(5, 9, 22, 0.97);
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.08);
+
+        backdrop-filter:
+            blur(20px);
+
+        transform:
+            translateY(-120%);
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        transition:
+            transform 0.4s ease,
+            opacity 0.4s ease;
+    }
+
+
+    .mobile-menu-active {
+        transform:
+            translateY(0);
+
+        opacity: 1;
+
+        pointer-events: auto;
+    }
+
+
+    .mobile-nav-link {
+        position: relative;
+
+        padding:
+            15px 5px;
+
+        color:
+            #7985a3;
+
+        text-decoration: none;
+
+        font-size: 12px;
+
+        font-weight: 700;
+
+        letter-spacing: 1.5px;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.05);
+
+        transition:
+            color 0.3s ease;
+    }
+
+
+    .mobile-nav-link.active,
+    .mobile-nav-link:hover {
+        color: white;
+    }
+
+
+    .mobile-nav-link.active::before {
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+
+        bottom: -1px;
+
+        width: 45px;
+
+        height: 2px;
+
+        background:
+            linear-gradient(
+                90deg,
+                white,
+                var(--cyan)
+            );
+    }
+
+    
+
+    /* -------------------------
+       GENERAL
+    ------------------------- */
+
+    .section {
+        width: 90%;
+
+        padding-top: 120px;
+
+        padding-bottom: 90px;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .hero {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+        padding-top: 140px;
+
+        text-align: left;
+    }
+
+
+    .hero h1 {
+        font-size:
+            clamp(58px, 15vw, 90px);
+
+        letter-spacing: -5px;
+    }
+
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+
+    .hero-visual {
+        order: 2;
+    }
+
+
+    .hero-photo-placeholder {
+        width:
+            min(330px, 85vw);
+    }
+
+}
+
 
 /* =========================
    MOBILE
